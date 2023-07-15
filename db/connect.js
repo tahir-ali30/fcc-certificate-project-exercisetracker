@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 function connectDB(url) {
-    return mongoose.connect(url).then(console.log('Connected to DB...'))
+    return mongoose.connect(url)
 }
 
 module.exports = connectDB
